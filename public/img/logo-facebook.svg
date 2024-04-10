@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #3c4ba6;
+      }
+    </style>
+  </defs>
+  <g id="Facebook">
+    <circle id="Ellipse_10" data-name="Ellipse 10" class="cls-2" cx="20" cy="20" r="20"/>
+    <path id="Vector" class="cls-1" d="M21.85,29v-7.74h2.67l.4-3.03h-3.06v-1.93c0-.87,.25-1.47,1.53-1.47h1.62v-2.7c-.79-.08-1.58-.12-2.38-.12-2.36,0-3.97,1.41-3.97,4v2.22h-2.65v3.03h2.65v7.75h3.19Z"/>
+  </g>
+</svg>

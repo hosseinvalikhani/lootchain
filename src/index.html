@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../public/css/style.css" />
+    <script src="./../public/js/script.js" defer></script>
+  </head>
+  <body class=" bg-hardGray text-white">
+    <!--NAV Bar-->
+    <nav class="fixed left-0 right-0 top-0 mx-auto z-50 bg-hardGray py-4">
+      <div class="container flex items-center justify-between mx-auto px-8 sm:px-4 md:px-0">
+        <!-- Logo -->
+        <div class="z-50">
+          <h2
+          class="text-transparent bg-gradient-to-r from-darkViolet to-lightBlue bg-clip-text uppercase font-sans font-bold text-4xl"
+        >
+          lootchain
+        </h2>
+        </div>
+
+        <div
+          class="hidden z-40 font-sans lg:flex lg:items-start lg:justify-center lg:space-x-8"
+        >
+          <a
+            href="#"
+            class="font-bold uppercase tracking-widest text-transparent bg-gradient-to-r from-darkViolet to-lightBlue bg-clip-text border-b-2 border-darkViolet"
+          >
+            Home
+          </a>
+
+          <a
+            href="#"
+            class="text-white uppercase tracking-widest font-extralight"
+          >
+            My profile
+          </a>
+
+          <a
+            href="#"
+            class="text-white uppercase tracking-widest font-extralight"
+          >
+            activity
+          </a>
+
+          <a
+            href="#"
+            class="text-white mb-1 font-extralight uppercase tracking-widest"
+          >
+            how it works
+          </a>
+        </div>
+
+        <div
+          class="hidden text-white lg:flex lg:items-center lg:justify-center lg:space-x-8"
+        >
+          <button
+            class="border rounded-xl px-9 py-3 font-extralight uppercase tracking-widest"
+          >
+            create
+          </button>
+          <button class="font-extralight uppercase tracking-widest">
+            sign in
+          </button>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="lg:hidden">
+          <button
+            id="menu-btn"
+            type="button"
+            class="z-40 block hamburger lg:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+    <div
+    id="menu"
+    class="relative top-0 bottom-0 left-0 hidden flex-col justify-between self-end w-full min-h-screen px-8 py-1 pt-40 space-y-3 text-lg text-white uppercase bg-hardGray lg:hidden"
+    >
+      <div class="flex flex-col top-0 w-full space-y-3 text-lg text-white uppercase">
+        <div>
+          <a
+        href="#"
+        class="font-bold uppercase tracking-widest text-transparent bg-gradient-to-r from-darkViolet to-lightBlue bg-clip-text border-b-2 border-darkViolet"
+        >
+          Home
+        </a>
+        </div>
+  
+        <a
+          href="#"
+          class="text-white uppercase tracking-widest font-extralight"
+        >
+          My profile
+        </a>
+  
+        <a
+          href="#"
+          class="text-white uppercase tracking-widest font-extralight"
+        >
+          activity
+        </a>
+  
+        <a
+          href="#"
+          class="text-white mb-1 font-extralight uppercase tracking-widest"
+        >
+          how it works
+        </a>
+      </div>
+
+      <div class="flex items-center justify-between px-12 py-24 ">
+        <button
+            class="border rounded-xl px-9 py-3 font-extralight uppercase tracking-widest"
+          >
+            create
+          </button>
+          <button class="font-extralight uppercase tracking-widest">
+            sign in
+          </button>
+      </div>
+    </div>
+    </nav>
+
+    
+
+    <!-- header section -->
+    <section class="container flex items-center justify-between mx-auto px-4 my-48 sm:px-0">
+      <!-- text & header -->
+      <div class="flex flex-col items-start justify-start space-y-12">
+        <h1
+          class="max-w-xl font-opensans font-black text-4xl lg:text-6xl sm:max-w-7xl"
+        >
+          Let’s build smart and clear
+        </h1>
+
+        <div class="flex flex-col justify-start items-start">
+          <img
+            src="./../public/img/Loot boxes.png"
+            alt=""
+            class="flex items-start"
+          />
+        </div>
+
+        <p
+          class="max-w-3xl my-10 text-lg font-light tracking-wider sm:text-xl md:text-2xl"
+        >
+          LootChain helps you to use blockchain to create transparent and safe
+          loot boxes without <br />
+          blockchain knowledge.
+        </p>
+
+        <div
+          class="flex flex-col items-start justify-start space-y-4 space-x-0 text-2xl w-full sm:flex-row sm:space-y-0 sm:space-x-10"
+        >
+          <button
+            class="font-medium rounded-2xl py-4 w-full bg-gradient-to-r from-darkViolet to-lightBlue sm:w-64"
+          >
+            Get start
+          </button>
+
+          <button class="border font-medium rounded-2xl w-full py-4 sm:w-64">
+            How it work
+          </button>
+        </div>
+
+        <div
+          class="flex flex-col justify-between w-full space-y-8 mt-20 p-8 rounded-3xl shadow-innerbb border-b border-lightBlue sm:flex-row sm:space-y-0"
+        >
+          <div class="flex flex-col items-center justify-center font-opensans">
+            <span class="font-bold text-3xl">28K</span>
+            <span class="text-lightGray font-sans text-xl">projects count</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center font-opensans">
+            <span class="font-bold text-3xl">16K</span>
+            <span class="text-lightGray font-sans text-xl"
+              >Smart contracts</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center justify-center font-opensans">
+            <span class="font-bold text-3xl">35K+</span>
+            <span class="text-lightGray font-sans text-xl"
+              >Used lootboxes`</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- image -->
+      <div class="hidden relative lg:block">
+        <div
+          class="absolute w-32 h-32 rounded-full bg-darkViolet -top-1/5 -left-1/5 blur-3xl scale-125 -z-10"
+        ></div>
+
+        <!-- bitcoin & gamepad -->
+        <img src="./../public/img/gamepad.png" alt="" />
+
+        <div
+          class="absolute w-32 h-32 rounded-full bg-lightBlue bottom-3 -right-16 blur-3xl scale-125 -z-10"
+        ></div>
+      </div>
+    </section>
+
+    <!-- who used -->
+    <section class="container flex flex-col mx-auto mt-20">
+      <!-- text -->
+      <div class="flex flex-col text-center">
+        <div class="flex flex-1 flex-col items-center justify-center">
+          <h2
+            class="font-sans font-semibold text-5xl tracking-tighter leading-snug text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text"
+          >
+            Companies that used LootChanin
+          </h2>
+        </div>
+
+        <p
+          class="my-6 mx-auto text-white max-w-lg text-xl font-sans md:max-w-2xl lg:text-2xl"
+        >
+          Eu, molestie commodo, enim pellentesque turpis integer sagittis
+        </p>
+      </div>
+
+      <!-- logo -->
+      <div
+        class="hidden relative w-full mx-auto mt-16 lg:flex lg:flex-col lg:items-center lg:justify-center"
+      >
+        <div>
+          <div class="flex space-x-16">
+            <img
+              src="./../public/img/logo-1.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/hubspot.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/slack.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/spotify.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/steam.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-7.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-4.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/drop-box.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-full mx-auto space-y-16 pt-16 after:bg-gradient-to-b after:from-lowGray after:to-hardGray after:absolute after:top-16 after:bottom-0 after:left-0 after:right-0"
+        >
+          <div class="flex space-x-16 -z-10">
+            <img
+              src="./../public/img/logo-5.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-8.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-6.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-12.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-11.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-7-saleforce.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-10.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+          </div>
+
+          <div class="flex space-x-16 -z-10">
+            <img
+              src="./../public/img/logo-5-e.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-8-s.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-6-2.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-3-amazun.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-7-sbuy.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+            <img
+              src="./../public/img/logo-10-b.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex space-x-16 lg:hidden">
+          <div  class="flex flex-wrap justify-center items-start gap-8 lg:hidden after:bg-gradient-to-b after:from-lowGray after:to-hardGray after:absolute after:top-16 after:bottom-0 after:left-0 after:right-0">
+          
+          <img
+            src="./../public/img/hubspot.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/slack.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/spotify.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/steam.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-7.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-4.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/drop-box.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-5.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-8.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-6.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-12.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-11.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+              src="./../public/img/logo-7-saleforce.png"
+              alt=""
+              class="w-16 rounded-full"
+            />
+          <img
+            src="./../public/img/logo-10.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-5-e.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-8-s.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-6-2.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-3-amazun.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-7-sbuy.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          <img
+            src="./../public/img/logo-10-b.png"
+            alt=""
+            class="w-16 rounded-full"
+          />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BlockChain On Game-->
+    <section class="flex flex-col mx-auto mt-40">
+      <div class="container flex flex-col mx-auto">
+        <!-- text -->
+      <div class="flex flex-col text-center">
+        <div class="flex flex-1 flex-col items-center justify-center">
+          <h2 
+          class="font-sans font-semibold text-5xl mb-6 py-2 tracking-tighter text-transparent 
+          bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text"
+          >
+          Blockchain on game
+        </h2>
+        </div>
+
+        <p class="my-6 text-white text-2xl font-sans">
+          By using Blockchain, we can have the following advantages: 
+        </p>
+      </div>
+
+      <!-- Buttons -->
+      <div
+          class="flex flex-col items-start justify-center px-4 space-y-4 space-x-0 text-2xl w-full sm:flex-row sm:space-y-0 sm:space-x-10 sm:px-0"
+        >
+          <button
+            class="font-medium rounded-2xl py-4 w-full bg-gradient-to-r from-darkViolet to-lightBlue sm:w-64"
+          >
+            Get start
+          </button>
+
+          <button class="border font-medium rounded-2xl w-full py-4 sm:w-64">
+            How it work
+          </button>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col justify-center px-20 w-full">
+
+        <div class="flex flex-wrap gap-2 space-y-32 justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute 
+        after:top-16 after:bottom-1/4 after:left-0 after:right-0 after:blur-2xl after:opacity-20 sm:gap-4 md:gap-12 md:space-y-0">
+          <!-- transparency -->
+        <div class="container flex flex-col mx-auto justify-between items-center gap-8 lg:flex-row">
+          <div class="flex flex-col items-center justify-start z-10 w-full md:w-2/5 xl:w-1/5">
+            <!-- icon -->
+            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+              <img src="./../public/img/shield-check-24.svg" alt="">
+                
+            </div>
+  
+            <!-- text -->
+            <div class="flex flex-col items-center justify-center text-center mt-4">
+              <h3 class="font-sans font-medium text-xl">
+                transparency
+              </h3>
+  
+              <p class="max-w-xs w-60 mt-4 font-sans font-light text-lg text-lightGray">
+                Due to the transparency of the blockchain data and the implementation...
+              </p>
+            </div>
+          </div>
+  
+          <!-- asset ownership -->
+          <div class="flex flex-col items-center justify-start w-full z-10 py-10 rounded-3xl bg-opacity-50 bg-gradient-to-r from-darkViolet/50 to-lightBlue/50 md:w-2/5 xl:w-1/5">
+            <!-- icon -->
+            <div class="relative ficon p-14 rounded-3xl shadow-inner opacity-100 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+              <img src="./../public/img/archive-24.svg" alt="">
+                
+                
+            </div>
+  
+            <!-- text -->
+            <div class="flex flex-col items-center justify-center text-center mt-4">
+              <h3 class="font-sans font-medium text-lg">
+                Asset Ownership
+  
+              </h3>
+  
+              <p class="max-w-xs w-52 mt-4 font-sans font-light text-xl text-lightGray">
+                In Blockchain, the user owns his own assets. Because all virtual assets are limited to his virtual wallet address. This feature allows the player to keep his assets after the end of the game and allows trading.
+              </p>
+            </div>
+          </div>
+  
+          <!-- asset reusability -->
+          <div class="flex flex-col items-center justify-start w-full z-10 md:w-2/5 xl:w-1/5">
+            <!-- icon -->
+            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+              <img src="./../public/img/file-media-24.svg" alt="">
+                
+                
+            </div>
+  
+            <!-- text -->
+            <div class="flex flex-col items-center justify-center text-center mt-4">
+              <h3 class="font-sans font-medium text-xl">
+                Assets Reusability
+              </h3>
+  
+              <p class="max-w-xs w-60 mt-4 font-sans font-light text-lg text-lightGray">
+                By using blockchain, you can create an ecosystem that allows players...
+              </p>
+            </div>
+          </div>
+  
+          <!-- ugc -->
+          <div class="flex flex-col items-center justify-start w-full z-10 md:w-2/5 xl:w-1/5">
+            <!-- icon -->
+            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+              <img src="./../public/img/rocket-24.svg" alt="">
+            </div>
+  
+            <!-- text -->
+            <div class="flex flex-col items-center justify-center text-center mt-4">
+              <h3 class="max-w-xs w-60 font-sans font-medium text-xl">
+                User-Generated Content (UGC)
+              </h3>
+  
+              <p class="max-w-xs w-60 font-sans font-normal text-lg text-lightGray">
+                User content generation in traditional games is limit...
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!-- LootChain Features -->
+    <section class="container px-8 flex flex-col items-start mx-auto mt-20 md:px-4 lg:px-0">
+
+      <div class="flex flex-col gap-4 lg:flex-row lg:space-x-12 lg:gap-0">
+        <div class="flex flex-col items-start gap-8 lg:gap-14">
+
+          <h3 
+            class="font-sans font-semibold text-4xl tracking-tighter leading-normal text-transparent 
+            bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text lg:w-60 lg:text-5xl"
+          >
+            LootChain features
+          </h3>
+          <p class="max-w-xl font-sans text-xl lg:max-w-sm lg:text-2xl">
+            By using LootChain, you can have the following advantages: 
+          </p>
+  
+          <button class="w-52 py-4 font-medium rounded-2xl   bg-gradient-to-r from-darkViolet to-lightBlue">
+            Get start
+          </button>
+        </div>
+
+        <div class="flex flex-col space-x-0 mx-auto gap-14 sm:flex-row lg:space-x-12 md:gap-0">
+          <div class="flex flex-col items-start justify-center gap-14 sm:items-center">
+            <!-- No Need Blockchain expert  -->
+            <div class="flex space-x-6 items-center">
+              <!-- icon -->
+              <div class="relative min-w-16 faicon p-2 rounded-3xl after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+               <img src="./../public/img/shield-check-24.svg" alt="" class="z-10 scale-50 before:block before:bg-white">
+                    
+              </div>
+              <!-- <div class="min-w-[4rem] w-16 h-16 flex flex-row justify-center items-center rounded-3xl shadow-inner-xs">
+                
+                <div class="w-5 h-5 flex flex-row justify-center items-center">
+                  <img src="./../public/img/shield-check-24.svg" alt="" class="max-w-full max-h-full">
+                </div>
+              </div> -->
+  
+              <!-- text -->
+              <div class="flex flex-col">
+  
+                <h4 class="font-sans font-normal text-base md:text-xl">
+                  No Need Blockchain expert 
+                </h4>
+  
+                <p class="max-w-sm mt-3 font-sans font-light text-sm text-lightGray md:text-lg">
+                  Due to the transparency of the blockchain data and the implementation...
+                </p>
+              </div>
+            </div>
+  
+            <!-- No Need Blockchain expert  -->
+            <div class="flex space-x-6 items-center">
+              <!-- icon -->
+              <div class="relative min-w-16 faicon p-2 rounded-3xl after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/shield-check-24.svg" alt="" class="z-10 scale-50 before:block before:bg-white">
+              </div>
+  
+              <!-- text -->
+              <div class="flex flex-col">
+  
+                <h4 class="font-sans font-normal text-base md:text-xl">
+                  Restfull API
+                </h4>
+  
+                <p class="max-w-sm mt-3 font-sans font-light text-sm text-lightGray md:text-lg">
+                  Due to the transparency of the blockchain data and the implementation...
+                </p>
+              </div>
+            </div>
+  
+          </div>
+    
+          <div class="flex flex-col items-start justify-center gap-14 sm:items-center">
+            <!-- No Need Blockchain expert  -->
+            <div class="flex space-x-6 items-center">
+              <!-- icon -->
+              <div class="relative min-w-16 faicon p-2 rounded-3xl after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/shield-check-24.svg" alt="" class="z-10 scale-50 before:block before:bg-white">
+              </div>
+  
+              <!-- text -->
+              <div class="flex flex-col">
+  
+                <h4 class="font-sans font-normal text-base md:text-xl">
+                  Pre-prepared pages
+                </h4>
+  
+                <p class="max-w-sm mt-3 font-sans font-light text-sm text-lightGray md:text-lg">
+                  Due to the transparency of the blockchain data and the implementation...
+                </p>
+              </div>
+            </div>
+  
+            <!-- No Need Blockchain expert  -->
+            <div class="flex space-x-6 items-center">
+              <!-- icon -->
+              <div class="relative min-w-16 faicon p-2 rounded-3xl after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/shield-check-24.svg" alt="" class="z-10 scale-50 before:block before:bg-white">
+              </div>
+  
+              <!-- text -->
+              <div class="flex flex-col">
+  
+                <h4 class="font-sans font-normal text-base md:text-xl">
+                  No Need Blockchain expert 
+                </h4>
+  
+                <p class="max-w-sm mt-3 font-sans font-light text-sm text-lightGray md:text-lg">
+                  Due to the transparency of the blockchain data and the implementation...
+                </p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- customer say -->
+    <section class="container flex flex-col items-center justify-center mx-auto mt-32">
+
+      <div class="flex flex-col mx-auto">
+        <!-- text -->
+        <div class="flex flex-col">
+          <h2 
+          class="font-sans font-semibold text-5xl mb-6 py-2 tracking-tighter text-transparent 
+          bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text"
+          >
+          What our customer say
+        </h2>
+        </div>
+      </div>
+
+      <div class="flex flex-col mx-auto w-full items-center justify-center gap-8 lg:flex-row lg:w-fit lg:mx-20 xl:mx-auto">
+        <!-- photo --> 
+        <div class="relative min-w-[16rem] w-[16rem] h-[18rem] md:min-w-[21.75rem] md:w-[21.75rem] md:h-[24.25rem]">
+
+          <img class="relative z-20 w-full h-full object-cover object-center rounded-full" src="./../public/img/customer.png" alt="Avatar">
+          <div class="absolute top-4 -left-6 md:top-8 md:-left-12 z-10 block w-full h-full bg-white rounded-full"></div>
+
+      </div>
+        
+
+        <!-- text -->
+      <div class="flex flex-col gap-8 px-8 mt-10 lg:mt-0">
+          <!-- customer -->
+          <div class="flex flex-col gap-2">
+            <h5 class="font-inter font-bold text-2xl">
+              Justin Alins
+            </h5>
+            <p class="font-inter text-sm text-lightGray">
+              Product Designer at designing
+            </p>
+          </div>
+          <blockquote class="max-w-5xl text-xl font-sans font-medium text-lightGray lg:max-w-xl">
+            <em class="font-inter font-light">
+              “Really Jobfind is the best platform to get any kind of job, aspecially their support was awesome, They have tried to level best to give best support of new candidate.”
+            </em>
+          </blockquote>
+
+          <svg width="100" height="19" viewBox="0 0 100 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 1000002343">
+            <path id="Star 17" d="M90.0543 1.26697C90.2354 0.887412 90.7757 0.887412 90.9568 1.26697L93.0323 5.61653C93.1052 5.76929 93.2504 5.8748 93.4182 5.89691L98.1963 6.52675C98.6132 6.58171 98.7802 7.09555 98.4751 7.38509L94.9798 10.7031C94.8571 10.8196 94.8016 10.9903 94.8324 11.1568L95.7099 15.8956C95.7865 16.3091 95.3494 16.6267 94.9798 16.4261L90.744 14.1272C90.5953 14.0464 90.4158 14.0464 90.267 14.1272L86.0313 16.4261C85.6617 16.6267 85.2246 16.3091 85.3011 15.8956L86.1786 11.1568C86.2094 10.9903 86.154 10.8196 86.0312 10.7031L82.5359 7.38509C82.2309 7.09555 82.3979 6.58171 82.8148 6.52675L87.5929 5.89691C87.7607 5.8748 87.9059 5.76929 87.9788 5.61653L90.0543 1.26697Z" fill="url(#paint0_linear_31_171)"/>
+            <path id="Star 14" d="M9.7427 1.22827C9.9262 0.856977 10.4557 0.856976 10.6392 1.22827L12.8101 5.62086C12.8844 5.77112 13.029 5.87417 13.1952 5.89533L18.1628 6.52757C18.5851 6.58131 18.7513 7.10453 18.4375 7.39217L14.827 10.7013C14.6991 10.8185 14.6411 10.9937 14.6738 11.1641L15.5835 15.9076C15.6624 16.3187 15.2312 16.6389 14.8604 16.4446L10.423 14.1193C10.2777 14.0432 10.1042 14.0432 9.95887 14.1193L5.52153 16.4446C5.1507 16.6389 4.71954 16.3187 4.7984 15.9076L5.70812 11.1641C5.74079 10.9937 5.68281 10.8185 5.5549 10.7013L1.94443 7.39217C1.6306 7.10454 1.79684 6.58131 2.21913 6.52757L7.18668 5.89533C7.35295 5.87417 7.49754 5.77112 7.5718 5.62086L9.7427 1.22827Z" fill="url(#paint1_linear_31_171)"/>
+            <path id="Star 15" d="M29.7364 1.26697C29.9175 0.887412 30.4578 0.887412 30.6389 1.26697L32.7144 5.61653C32.7873 5.76929 32.9325 5.8748 33.1003 5.89691L37.8784 6.52675C38.2953 6.58171 38.4623 7.09555 38.1573 7.38509L34.6619 10.7031C34.5392 10.8196 34.4837 10.9903 34.5145 11.1568L35.392 15.8956C35.4686 16.3091 35.0315 16.6267 34.6619 16.4261L30.4262 14.1272C30.2774 14.0464 30.0979 14.0464 29.9491 14.1272L25.7134 16.4261C25.3438 16.6267 24.9067 16.3091 24.9833 15.8956L25.8607 11.1568C25.8916 10.9903 25.8361 10.8196 25.7133 10.7031L22.218 7.38509C21.913 7.09555 22.08 6.58171 22.4969 6.52675L27.275 5.89691C27.4428 5.8748 27.588 5.76929 27.6609 5.61653L29.7364 1.26697Z" fill="url(#paint2_linear_31_171)"/>
+            <path id="Star 16" d="M70.0606 1.22827C70.2441 0.856977 70.7736 0.856976 70.9571 1.22827L73.128 5.62086C73.2022 5.77112 73.3468 5.87417 73.5131 5.89533L78.4806 6.52757C78.9029 6.58131 79.0692 7.10453 78.7554 7.39217L75.1449 10.7013C75.017 10.8185 74.959 10.9937 74.9917 11.1641L75.9014 15.9076C75.9802 16.3187 75.5491 16.6389 75.1783 16.4446L70.7409 14.1193C70.5956 14.0432 70.4221 14.0432 70.2768 14.1193L65.8394 16.4446C65.4686 16.6389 65.0374 16.3187 65.1163 15.9076L66.026 11.1641C66.0587 10.9937 66.0007 10.8185 65.8728 10.7013L62.2623 7.39217C61.9485 7.10454 62.1147 6.58131 62.537 6.52757L67.5046 5.89533C67.6708 5.87417 67.8154 5.77112 67.8897 5.62086L70.0606 1.22827Z" fill="url(#paint3_linear_31_171)"/>
+            <path id="Star 18" d="M49.7361 1.22827C49.9196 0.856977 50.4491 0.856976 50.6326 1.22827L52.8035 5.62086C52.8777 5.77112 53.0223 5.87417 53.1886 5.89533L58.1561 6.52757C58.5784 6.58131 58.7447 7.10453 58.4309 7.39217L54.8204 10.7013C54.6925 10.8185 54.6345 10.9937 54.6672 11.1641L55.5769 15.9076C55.6557 16.3187 55.2246 16.6389 54.8537 16.4446L50.4164 14.1193C50.2711 14.0432 50.0976 14.0432 49.9522 14.1193L45.5149 16.4446C45.1441 16.6389 44.7129 16.3187 44.7918 15.9076L45.7015 11.1641C45.7342 10.9937 45.6762 10.8185 45.5483 10.7013L41.9378 7.39217C41.624 7.10454 41.7902 6.58131 42.2125 6.52757L47.1801 5.89533C47.3463 5.87417 47.4909 5.77112 47.5652 5.62086L49.7361 1.22827Z" fill="url(#paint4_linear_31_171)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear_31_171" x1="90.5055" y1="0.321289" x2="90.5055" y2="18.6789" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0985536" stop-color="#FFA364"/>
+            <stop offset="0.788912" stop-color="#FFC112"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_31_171" x1="10.1909" y1="0.321289" x2="10.1909" y2="18.6789" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0985536" stop-color="#FFA364"/>
+            <stop offset="0.788912" stop-color="#FFC112"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_31_171" x1="30.1876" y1="0.321289" x2="30.1876" y2="18.6789" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0985536" stop-color="#FFA364"/>
+            <stop offset="0.788912" stop-color="#FFC112"/>
+            </linearGradient>
+            <linearGradient id="paint3_linear_31_171" x1="70.5088" y1="0.321289" x2="70.5088" y2="18.6789" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0985536" stop-color="#FFA364"/>
+            <stop offset="0.788912" stop-color="#FFC112"/>
+            </linearGradient>
+            <linearGradient id="paint4_linear_31_171" x1="50.1843" y1="0.321289" x2="50.1843" y2="18.6789" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0985536" stop-color="#FFA364"/>
+            <stop offset="0.788912" stop-color="#FFC112"/>
+            </linearGradient>
+            </defs>
+          </svg>
+            
+          
+      </div>
+        
+      </div>
+      <div class="flex items-center gap-2">
+            
+        <!-- left arrow -->
+        <div class="px-3 mt-1">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- right arrow -->
+        <div class="px-3 py-1 rounded-full bg-white">
+          <button class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- How it Work -->
+    <section class="container flex flex-col mx-auto mt-40">
+      <div class="flex flex-col mx-auto">
+        <!-- text -->
+        <div class="flex flex-col text-center">
+          <div class="flex flex-1 flex-col items-center justify-center">
+            <h2 
+            class="font-sans font-semibold text-5xl mb-6 py-2 tracking-tighter text-transparent 
+            bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text"
+            >
+            How it work
+          </h2>
+          </div>
+
+          <p class="my-6 text-white text-2xl font-sans">
+            By using Blockchain, we can have the following advantages: 
+          </p>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center gap-10 mx-auto px-12">
+
+        <div class="flex items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4
+        after:left-0 after:right-0 after:blur-2xl after:opacity-20">
+          <!-- Best resources & support -->
+          <div class="flex flex-col items-center justify-start z-10">
+            <!-- icon -->
+            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                  <div>
+                    <h5 class="font-sans text-5xl font-semibold">
+                    Best resources & support
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="font-sans font-normal text-xl text-lightGray">
+                      We are widely known for offering the best resources and support.
+                    </p>
+                  </div>
+
+                 <div class="flex items-center gap-3">
+                  <a href="#" class="text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
+                    learn more
+                 </a>
+                 <img src="./../public/img/arrow.svg" alt="">
+                  
+                 </div>
+            </div> 
+          </div>
+        </div>
+        
+        <!-- Easiest-to-use product -->
+        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
+         after:right-0 after:blur-2xl after:opacity-20 xl:flex">
+          <!-- Best resources & support -->
+          <div class="flex flex-col items-center justify-start z-10">
+            <!-- icon -->
+            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                  <div>
+                    <h5 class="font-sans text-5xl font-semibold">
+                      Easiest-to-use product
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="font-sans font-normal text-xl text-lightGray">
+                      We're the pioneers of simplifying goal we are proving it management.
+                    </p>
+                  </div>
+
+                 <div class="flex items-center gap-3">
+                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
+                    learn more
+                    <img src="./../public/img/arrow.svg" alt="">
+                  </a>
+                </div>
+                
+
+          
+            </div> 
+          </div>
+        </div>
+        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
+         after:right-0 after:blur-2xl after:opacity-20">
+          <!-- Best resources & support -->
+          <div class="flex flex-col items-center justify-start z-10">
+            <!-- icon -->
+            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                  <div>
+                    <h5 class="font-sans text-5xl font-semibold">
+                      Easiest-to-use product
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="font-sans font-normal text-xl text-lightGray">
+                      We're the pioneers of simplifying goal we are proving it management.
+                    </p>
+                  </div>
+
+                 <div class="flex items-center gap-3">
+                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
+                    learn more
+                    <img src="./../public/img/arrow.svg" alt="">
+                  </a>
+                </div>
+                
+
+          
+            </div> 
+          </div>
+        </div>
+        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
+         after:right-0 after:blur-2xl after:opacity-20">
+          <!-- Best resources & support -->
+          <div class="flex flex-col items-center justify-start z-10">
+            <!-- icon -->
+            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                  <div>
+                    <h5 class="font-sans text-5xl font-semibold">
+                      Easiest-to-use product
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="font-sans font-normal text-xl text-lightGray">
+                      We're the pioneers of simplifying goal we are proving it management.
+                    </p>
+                  </div>
+
+                 <div class="flex items-center gap-3">
+                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
+                    learn more
+                    <img src="./../public/img/arrow.svg" alt="">
+                  </a>
+                </div>
+                
+
+          
+            </div> 
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container flex flex-col items-center justify-center mx-auto my-44">
+      <div class="flex flex-col items-center justify-center mx-24">
+        <div class="flex flex-col">
+          <h2 class="font-sans font-semibold text-5xl mb-6 py-2 tracking-tighter text-transparent 
+          bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
+            FAQS
+          </h2>
+          
+        </div>
+        <p class="my-6 text-white text-base font-sans md:text-lg lg:text-2xl">
+          By using Blockchain, we can have the following advantages: 
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-center mx-auto gap-4 my-14 w-full md:gap-8 lg:gap-12">
+        <!-- 01 question -->
+        <div class="flex items-start gap-12 px-10 lg:px-28">
+          <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text md:text-4xl lg:text-5xl">
+            01
+          </div>
+          <div class="flex flex-col gap-12 w-full">
+            <div class="flex justify-between">
+              <div>
+                <h2 class="font-sans font-bold text-xl md:text-2xl lg:text-3xl">
+                  Alright, but what exactly do you do?
+                </h2>
+              </div>
+              <div>
+                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="w-4">
+                </div>
+              </div>
+            </div>
+  
+            <div>
+              <p class="flex max-w-4xl font-sans font-normal text-lg  tracking-wide text-lightGray">
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- border -->
+        <div class="w-full border-0.5 border-b border-lightenGray"></div>
+
+        <!-- 02 question -->
+        <div class="flex items-start gap-12 px-10 lg:px-28">
+          <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text md:text-4xl lg:text-5xl">
+            02
+          </div>
+          <div class="flex flex-col gap-12 w-full">
+            <div class="flex justify-between">
+              <div>
+                <h2 class="max-w-sm font-sans font-bold text-xl md:text-2xl lg:text-3xl lg:max-w-4xl">
+                  I don't need a brand strategist but I need help executing an upcoming campaign. Can we still work together?
+                </h2>
+              </div>
+              <div>
+                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="w-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- border -->
+        <div class="w-full border-0.5 border-b border-lightenGray"></div>
+
+        <!-- 03 question -->
+        <div class="flex items-start gap-12 px-10 lg:px-28">
+          <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text  md:text-4xl lg:text-5xl">
+            03
+          </div>
+          <div class="flex flex-col gap-12 w-full">
+            <div class="flex justify-between">
+              <div class="">
+                <h2 class="max-w-4xl font-sans font-bold text-xl md:text-2xl lg:text-3xl">
+                  Are your rates competitive?
+                </h2>
+              </div>
+              <div>
+                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="w-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- border -->
+        <div class="w-full border-0.5 border-b border-lightenGray"></div>
+
+
+        <!-- 04 question -->
+        <div class="flex items-start gap-12 px-10 lg:px-28">
+          <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text  md:text-4xl lg:text-5xl">
+            04
+          </div>
+          <div class="flex flex-col gap-12 w-full">
+            <div class="flex justify-between">
+              <div class="">
+                <h2 class="max-w-4xl font-sans font-bold text-xl md:text-2xl lg:text-3xl">
+                  Why do you have a monthly project cap?
+                </h2>
+              </div>
+              <div>
+                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="w-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <footer class="relative bg-darkBlue">
+      <div class="container flex flex-col justify-around gap-8 mx-auto py-32 lg:flex-row lg:px-2">
+
+        <!-- logo and social icon -->
+        <div class="flex flex-col items-start justify-start gap-4">
+         
+          <!-- logo -->
+          <div>
+            <img src="./../public/img/Peboo.png" alt="">
+          </div>
+          
+          <!-- text -->
+          <div class="">
+            <p class="max-w-sm font-roboto text-2xl leading-8">
+              Our simple but powerful OKR+ platform turns great strategies into amazing results. And it's free.
+            </p>
+          </div>
+          
+          <!-- social icon -->
+          <div class="flex gap-8">
+
+            <!-- facebook log -->
+            <div class="w-12 h-12">
+              <img src="./../public/img/Facebook.png" alt="">
+            </div>
+
+            <!-- instagram logo -->
+            <div class="w-12 h-12">
+              <img src="./../public/img/Instagram.png" alt="">
+            </div>
+                 
+            <!-- twitter logo -->
+            <div class="w-12 h-12">
+              <img src="./../public/img/Twitter.png" alt="">
+            </div>  
+
+            <!-- linkedin logo -->
+            <div class="w-12 h-12">
+              <img src="./../public/img/LinkedIn.png" alt="">
+            </div>  
+
+          </div>
+        </div>
+
+        <div class="flex items-start justify-between gap-0 lg:gap-32 lg:justify-start">
+          <!-- resources -->
+        <div class="flex flex-col items-start gap-12">
+
+          <h5 class="font-worksans font-semibold text-3xl">
+            Resources
+          </h5>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Features</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Pricing</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Login</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Signup</a>
+        </div>
+
+        <div class="flex flex-col items-start gap-12">
+
+          <h5 class="font-worksans font-semibold text-3xl">
+            Legal
+          </h5>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Terms of Use</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Privace Policy</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Legal Notice</a>
+        </div>
+  
+        <div class="flex flex-col items-start gap-12">
+  
+          <h5 class="font-worksans font-semibold text-3xl">
+            Links
+          </h5>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Feedback</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Privace Policy</a>
+          <a href="#" class="font-roboto font-medium text-xl opacity-50">Legal Notice</a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-16 right-4">
+      <svg width="95" height="84" viewBox="0 0 95 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="pattern">
+        <path id="Vector" d="M18.1027 65.529C18.9438 66.8109 19.3317 68.289 19.8665 69.7021C19.9309 70.03 20.2456 70.3087 20.0325 70.6962C20.6739 71.1122 20.6918 71.998 21.3188 72.423C21.308 72.577 21.3188 72.423 21.3519 72.5295C21.385 72.636 21.0509 73.1192 21.598 73.1054C21.6657 74.5425 22.8746 75.3202 23.7019 76.1622C24.4508 77.0181 25.3203 77.7602 26.2833 78.3651C27.7154 79.1573 28.7018 78.8289 29.2003 77.3125C29.8472 75.3114 30.3031 73.2536 30.5618 71.1666C30.7354 69.7193 30.7097 68.189 30.8742 66.7808C31.2086 64.1017 30.996 61.4364 31.1408 58.7753C31.2289 57.0735 30.835 55.3716 30.9942 53.6655C31.0237 53.3057 30.8089 52.8441 31.3379 52.5872C31.4872 52.4939 31.8128 52.0294 31.1388 52.1292C30.7561 52.1809 30.8512 51.8939 30.8621 51.6862C30.8525 51.2102 30.8586 50.7378 30.8617 50.2606C30.8876 49.9164 30.7793 49.5824 30.7926 49.2394C30.7076 46.0391 29.3529 43.11 28.7955 40.0107C28.5391 39.6969 28.3425 39.3387 28.2155 38.9538C28.0854 38.0608 27.855 37.1852 27.5287 36.3438C27.459 36.0006 27.4334 35.6499 27.4524 35.3003C27.4637 35.2326 27.4831 35.1665 27.5102 35.1035C27.583 34.9308 27.9165 34.6823 27.3869 34.6919C27.0943 34.0424 26.9931 33.323 27.0953 32.6181C27.1513 32.3756 27.6021 32.1542 27.1279 31.8881C26.9424 31.3445 26.9155 30.7593 27.0503 30.2009C27.1851 29.6425 27.476 29.134 27.8891 28.7349C28.0216 28.6345 28.1784 28.5711 28.3434 28.5514C28.6651 28.591 28.9745 28.699 29.2509 28.8681C29.4698 29.0109 29.6701 29.1803 29.8472 29.3724C30.2653 30.2559 31.0343 30.9938 30.9517 32.0831C30.7193 32.4826 30.9317 32.8118 31.1314 33.1422C31.6131 34.9155 31.9771 36.7186 32.2211 38.5398C32.2578 38.8598 32.2757 39.1818 32.2745 39.5039C32.7195 41.7161 32.7185 43.9861 33.2772 46.1875C33.9375 48.4937 34.7758 50.7453 35.7845 52.9218C36.5764 54.7716 37.574 56.5264 38.7583 58.153C39.4488 59.1209 40.4026 59.8702 41.5064 60.312C42.3909 60.6564 43.0229 60.3285 43.5483 59.5517C44.9984 57.3939 44.7785 54.9205 44.969 52.5254C45.1126 51.5253 45.1531 50.5129 45.0898 49.5045C45.1711 49.1798 45.1284 48.8365 44.9702 48.5416C44.5492 46.7964 44.9629 45.0585 45.0462 43.3061C45.0649 42.9444 45.062 42.5818 45.0374 42.2205C45.0302 41.9737 45 41.7281 44.9472 41.4869C44.9283 41.3902 44.9206 41.2916 44.9244 41.1932C44.9914 40.7048 44.9546 40.2077 44.8163 39.7345C44.615 39.0874 44.5769 38.4006 44.7052 37.7353C44.7988 37.5381 44.8454 37.322 44.8415 37.1038C44.8376 36.8856 44.7832 36.6712 44.6826 36.4776C44.4505 35.1097 44.3008 33.7237 43.612 32.4605C43.5311 32.1576 43.4687 31.8501 43.425 31.5397C43.7127 31.1324 43.3366 30.7983 43.2988 30.427C43.0559 28.5704 42.511 26.7018 42.5377 24.7839C42.1937 23.7939 42.4827 22.8101 42.6026 21.8448C42.7225 20.8796 43.494 20.518 44.354 20.3623C45.214 20.2065 45.6087 20.7633 45.8968 21.3531C46.4748 22.458 46.7558 23.6942 46.7123 24.9404C45.8794 25.3002 46.9379 25.3015 46.8302 25.5362C47.0055 26.01 47.1087 26.5074 47.1363 27.0118C47.1651 27.3151 47.2493 27.6106 47.28 27.9061C47.2841 28.163 47.2392 28.4183 47.1475 28.6583C46.8188 29.2787 47.3627 29.7957 47.3614 30.3722C47.7179 33.2892 47.5507 36.2788 48.7803 39.0719C49.0799 39.755 49.6166 40.4104 49.5647 41.2595C49.6515 41.4411 49.7585 41.6123 49.8836 41.7699C50.8776 42.8358 51.1855 44.3036 52.2216 45.3833C53.076 46.2687 53.8763 47.1745 55.0984 47.5556C55.338 47.657 55.6061 47.6683 55.8533 47.5877C56.1006 47.507 56.3104 47.3396 56.4441 47.1165C57.0635 46.2407 57.5189 45.2598 57.7883 44.2215C58.4408 41.7951 58.8716 39.3144 59.0754 36.8101C59.1827 35.5783 59.352 34.3278 59.345 33.0737C59.3339 31.1594 58.3026 29.6481 57.5795 27.9979C56.7463 26.0751 55.7525 24.2058 55.3923 22.1079C55.3584 21.424 55.1702 20.7566 54.842 20.1556C54.7296 19.9778 54.6395 19.7867 54.5737 19.5869C54.4041 18.3941 54.1696 17.2152 53.97 16.0279C53.9798 14.6829 53.8759 13.2951 53.8755 11.9231C53.8721 11.1659 54.058 10.4198 54.4164 9.75277C54.7748 9.08574 55.2943 8.51891 55.9276 8.10383C56.4104 7.99334 56.905 7.94289 57.4002 7.95361C57.7868 7.99963 58.1576 8.13459 58.4833 8.34794C59.2036 8.81503 59.4887 9.61425 59.9334 10.2937C60.2407 10.8121 60.4497 11.3828 60.5499 11.977C60.6015 12.3922 60.6993 12.8004 60.8416 13.1939C60.9608 14.2948 61.1592 15.3857 61.4351 16.4581C61.5512 16.9545 61.0023 17.351 61.4253 17.803C62.1154 18.3827 61.8782 19.2137 62.0015 19.9467C62.067 20.3409 61.9682 20.7507 62.0416 21.1467C62.6671 23.4335 62.3857 25.7582 62.4293 28.0673C62.4421 28.8399 62.4108 29.6126 62.3357 30.3817C62.2344 31.5161 63.007 32.2919 63.655 33.0719C64.5404 34.1162 65.6174 34.9817 66.8278 35.6215C67.1082 35.7811 67.2099 36.233 67.666 36.0953C69.3271 35.3788 69.5861 33.8112 69.7386 32.3302C69.8844 31.0207 70.2872 29.7047 69.892 28.3651C69.8421 28.1887 70.0154 28.0269 70.1099 27.8674C70.2044 27.708 70.6763 27.4667 70.1654 27.1633C70.0714 26.8034 70.0653 26.4261 70.1475 26.0633C70.3699 23.655 70.2018 21.243 70.1925 18.8388C70.195 18.4356 70.2179 18.033 70.2409 17.6304C70.2972 17.1868 70.2957 16.7377 70.2362 16.2945C69.7977 15.1426 70.4189 13.9512 70.1176 12.7939C70.3741 12.0044 70.1534 11.2118 70.0963 10.424C69.8919 9.02546 70.1972 7.64982 70.0777 6.25847C70.0518 6.01701 70.1137 5.77429 70.252 5.57473C70.3904 5.37517 70.596 5.23212 70.8313 5.17176C72.1059 5.16533 72.7996 5.67575 72.8157 6.8372C72.8485 8.92541 73.3988 10.9848 73.0657 13.0874C73.0675 13.2402 73.0645 13.3961 73.0536 13.5502C73.0191 14.6629 73.1881 15.769 73.1741 16.8823C73.1874 17.0103 73.1746 17.1397 73.1363 17.2626C73.098 17.3855 73.035 17.4994 72.9513 17.5972C72.8373 19.1076 72.9707 20.6175 72.7538 22.1454C72.6358 22.8886 73.0202 23.9003 72.9592 24.7885C72.8296 26.7238 72.6632 28.6754 72.5792 30.6089C72.4726 32.0495 72.2459 33.4787 71.9016 34.8815C71.6089 36.256 70.502 37.8914 68.9692 38.0525C68.2501 38.1336 68.3501 37.5222 68.1834 37.5126C67.2374 37.4342 68.5443 38.1974 67.9756 38.2515C67.4992 38.3066 67.0167 38.2308 66.5801 38.0323C65.1129 37.3682 63.7523 36.4903 62.5425 35.4271C62.3813 35.2869 62.1875 35.1803 61.9962 35.0455C61.7079 38.0513 61.2625 41.04 60.6619 43.9993C60.244 45.7463 59.5485 47.4149 58.6018 48.9415C57.6881 50.4362 55.1159 51.1194 52.9509 49.54C50.8567 47.9596 49.1321 45.9417 47.8974 43.6267C47.9525 45.6005 47.5953 47.5575 48.0771 49.5392C48.2503 50.2343 47.6947 51.2844 47.8119 52.1148C48.0247 53.709 47.6508 55.2212 47.4905 56.754C47.2819 58.7452 46.8435 60.7329 45.1674 62.1216C44.2925 62.7755 43.2338 63.1371 42.1416 63.1549C41.0495 63.1727 39.9796 62.8457 39.0839 62.2205C37.1321 60.6869 35.6098 58.6748 34.6646 56.3795C34.4199 55.7198 34.0432 55.117 33.5576 54.6077C33.5388 54.5394 33.5328 54.4682 33.5402 54.3977C33.3284 54.53 33.353 54.7623 33.2795 54.9555C33.3557 56.7488 33.5167 58.5494 33.4779 60.3409C33.4078 62.6072 33.3172 64.8729 33.3668 67.1381C33.3284 68.4437 33.2241 69.7466 33.0545 71.0418C32.9086 72.8333 32.7861 74.6838 32.0162 76.3765C31.7327 77.1528 31.5049 77.9483 31.3346 78.7571C31.346 79.1717 30.7171 79.0224 30.7315 79.4418C30.0406 80.1145 29.5806 81.2855 28.2923 80.7985C27.6303 80.5426 27.0218 81.1973 26.5248 80.9053C25.0247 80.0151 23.1869 79.5165 22.3314 77.8151C22.0992 77.3577 21.1616 77.6356 21.4566 76.822C21.0143 76.2214 20.2772 75.8452 20.0962 75.0411C19.0663 73.5355 18.227 71.908 17.5977 70.1958C16.7947 67.8391 15.7359 65.5551 15.1856 63.1208C14.7935 61.3575 14.1625 59.6297 13.9004 57.7852C13.8307 57.1593 13.229 56.6249 13.3922 55.9003C13.4542 55.5603 13.2557 55.2425 13.2798 54.9061C12.5579 52.9472 12.5119 50.8271 11.8075 48.864C11.6999 48.5631 11.8762 48.2454 12.0153 47.9644C12.0153 47.9644 11.9822 47.9114 11.9702 47.8921C11.9347 47.8858 11.8985 47.8858 11.863 47.8921C11.5935 47.7392 11.6483 47.4841 11.6585 47.2434C11.6684 45.8984 10.9855 44.6447 11.2872 43.2848C11.3631 42.8491 11.4167 42.3135 12.0245 42.4291C12.6323 42.5448 12.6232 43.2266 12.661 43.7586C13.4249 46.5347 13.9173 49.38 14.5764 52.1815C14.8032 53.1444 15.5426 54.0815 15.1717 55.2771C15.0411 55.7002 15.8215 56.3171 15.8298 56.9947C16.2216 56.9039 16.1602 57.277 16.1391 57.404C15.8873 59.0474 17.3049 60.4378 16.8305 62.0998C17.6963 62.65 17.3116 63.7271 17.8134 64.4445C17.9477 64.5935 18.0436 64.773 18.0927 64.9675C18.1419 65.1619 18.1428 65.3654 18.0955 65.5603C17.729 65.6487 17.3884 65.5 16.9906 65.5812C17.3679 65.553 17.7404 65.6884 18.1027 65.529Z" fill="white"/>
+        </g>
+        </svg>
+        
+    </div>
+
+    </footer>
+  </body>
+</html>
