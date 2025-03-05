@@ -13,8 +13,11 @@ const btnFaq = document.querySelectorAll(".btn-faq");
 const txtFaq = document.querySelectorAll(".faq-text");
 btnFaq.forEach((button, index) => {
   button.addEventListener("click", () => {
+    button.classList.toggle("rotate-45");
+    button.classList.toggle("transition-transform");
+
     txtFaq.forEach((div, divIndex) => {
-      console.log(div, divIndex, index);
+
       if (divIndex === index) {
         div.classList.toggle("hidden");
         div.classList.toggle("flex");
