@@ -55,3 +55,12 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.btn-open {
+  transform: rotate(45deg);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}

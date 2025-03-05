@@ -6,11 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../public/css/style.css" />
     <script src="./../public/js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body class=" bg-hardGray text-white">
     <!--NAV Bar-->
     <nav class="fixed left-0 right-0 top-0 mx-auto z-50 bg-hardGray py-4">
-      <div class="container flex items-center justify-between mx-auto px-8 sm:px-4 md:px-0">
+      <div class="container flex items-center justify-between mx-auto px-8 sm:px-4">
         <!-- Logo -->
         <div class="z-50">
           <h2
@@ -211,7 +217,7 @@
     </section>
 
     <!-- who used -->
-    <section class="container flex flex-col mx-auto mt-20">
+    <section class="container flex flex-col mx-auto mt-20 px-10">
       <!-- text -->
       <div class="flex flex-col text-center">
         <div class="flex flex-1 flex-col items-center justify-center">
@@ -497,92 +503,97 @@
         </div>
       </div>
 
-      <div class="relative flex flex-col justify-center px-20 w-full">
+      <div class="relative flex flex-col justify-center px-4 w-full sm:px-20">
 
-        <div class="flex flex-wrap gap-2 space-y-32 justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute 
-        after:top-16 after:bottom-1/4 after:left-0 after:right-0 after:blur-2xl after:opacity-20 sm:gap-4 md:gap-12 md:space-y-0">
-          <!-- transparency -->
-        <div class="container flex flex-col mx-auto justify-between items-center gap-8 lg:flex-row">
-          <div class="flex flex-col items-center justify-start z-10 w-full md:w-2/5 xl:w-1/5">
-            <!-- icon -->
-            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-              <img src="./../public/img/shield-check-24.svg" alt="">
-                
+        <div class="flex justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute 
+        after:top-16 after:bottom-1/4 after:left-0 after:right-0 after:blur-2xl after:opacity-30 ">
+          
+          <div class="container flex flex-wrap mx-auto justify-between items-start lg:flex-row">
+            <!-- transparency -->
+            <div class="group min-h-[26rem] flex flex-col items-center justify-start z-10 py-10 w-full
+            rounded-3xl md:w-2/5 xl:w-1/5 hover:bg-gradient-to-r hover:from-darkViolet/50 hover:to-lightBlue/50">
+              <!-- icon -->
+              <div class="relative ficon p-6 rounded-3xl shadow-inner sm:p-14 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/shield-check-24.svg" alt="" class="scale-50 sm:scale-100">
+                  
+              </div>
+    
+              <!-- text -->
+              <div class="flex flex-col items-center justify-center text-center mt-4">
+                <h3 class="font-sans font-medium text-sm sm:text-xl">
+                  transparency
+                </h3>
+    
+                <p class="hidden max-w-xs px-2 mt-4 font-sans font-light text-xs text-lightGray sm:text-lg sm:w-60 group-hover:block">
+                  Due to the transparency of the blockchain data and the implementation...
+                </p>
+              </div>
             </div>
-  
-            <!-- text -->
-            <div class="flex flex-col items-center justify-center text-center mt-4">
-              <h3 class="font-sans font-medium text-xl">
-                transparency
-              </h3>
-  
-              <p class="max-w-xs w-60 mt-4 font-sans font-light text-lg text-lightGray">
-                Due to the transparency of the blockchain data and the implementation...
-              </p>
+    
+            <!-- asset ownership -->
+            <div class="group min-h-[32rem] flex flex-col items-center justify-start z-10 py-10 w-full rounded-3xl
+            md:min-h-[40rem] md:w-2/5 xl:w-1/5 bg-opacity-50 hover:bg-gradient-to-r hover:from-darkViolet/50 hover:to-lightBlue/50">
+              <!-- icon -->
+              <div class="relative ficon p-6 rounded-3xl shadow-inner opacity-100 sm:p-14 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/archive-24.svg" alt="" class="scale-50 sm:scale-100">
+                  
+                  
+              </div>
+    
+              <!-- text -->
+              <div class="flex flex-col items-center justify-center text-center mt-4">
+                <h3 class="font-sans font-medium text-sm sm:text-lg">
+                  Asset Ownership
+    
+                </h3>
+    
+                <p class="hidden max-w-xs px-2 mt-4 font-sans font-light text-sm text-lightGray sm:text-xl md:w-52 group-hover:block">
+                  In Blockchain, the user owns his own assets. Because all virtual assets are limited to his virtual wallet address. This feature allows the player to keep his assets after the end of the game and allows trading.
+                </p>
+              </div>
             </div>
-          </div>
-  
-          <!-- asset ownership -->
-          <div class="flex flex-col items-center justify-start w-full z-10 py-10 rounded-3xl bg-opacity-50 bg-gradient-to-r from-darkViolet/50 to-lightBlue/50 md:w-2/5 xl:w-1/5">
-            <!-- icon -->
-            <div class="relative ficon p-14 rounded-3xl shadow-inner opacity-100 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-              <img src="./../public/img/archive-24.svg" alt="">
-                
-                
+    
+            <!-- asset reusability -->
+            <div class="group min-h-[26rem] flex flex-col items-center justify-start z-10 py-10 w-full
+            rounded-3xl md:w-2/5 xl:w-1/5 hover:bg-gradient-to-r hover:from-darkViolet/50 hover:to-lightBlue/50">
+              <!-- icon -->
+              <div class="relative ficon p-6 rounded-3xl shadow-inner sm:p-14 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/file-media-24.svg" alt="" class="scale-50 sm:scale-100">
+                  
+                  
+              </div>
+    
+              <!-- text -->
+              <div class="flex flex-col items-center justify-center text-center mt-4">
+                <h3 class="font-sans font-medium text-sm sm:text-xl">
+                  Assets Reusability
+                </h3>
+    
+                <p class="hidden max-w-xs px-2 mt-4 font-sans font-light text-sm text-lightGray sm:text-lg sm:w-60 group-hover:block">
+                  By using blockchain, you can create an ecosystem that allows players...
+                </p>
+              </div>
             </div>
-  
-            <!-- text -->
-            <div class="flex flex-col items-center justify-center text-center mt-4">
-              <h3 class="font-sans font-medium text-lg">
-                Asset Ownership
-  
-              </h3>
-  
-              <p class="max-w-xs w-52 mt-4 font-sans font-light text-xl text-lightGray">
-                In Blockchain, the user owns his own assets. Because all virtual assets are limited to his virtual wallet address. This feature allows the player to keep his assets after the end of the game and allows trading.
-              </p>
+    
+            <!-- ugc -->
+            <div class="group min-h-[26rem] flex flex-col items-center justify-start z-10 py-10 w-full 
+            rounded-3xl md:w-2/5 xl:w-1/5 hover:bg-gradient-to-r hover:from-darkViolet/50 hover:to-lightBlue/50">
+              <!-- icon -->
+              <div class="relative ficon p-6 rounded-3xl shadow-inner sm:p-14 after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
+                <img src="./../public/img/rocket-24.svg" alt="" class="scale-50 sm:scale-100">
+              </div>
+    
+              <!-- text -->
+              <div class="flex flex-col items-center justify-center text-center mt-4">
+                <h3 class="max-w-xs font-sans font-medium text-sm sm:text-xl">
+                  User-Generated Content (UGC)
+                </h3>
+    
+                <p class="hidden max-w-xs px-2 font-sans font-normal text-sm text-lightGray sm:text-lg sm:w-60 group-hover:block">
+                  User content generation in traditional games is limit...
+                </p>
+              </div>
             </div>
-          </div>
-  
-          <!-- asset reusability -->
-          <div class="flex flex-col items-center justify-start w-full z-10 md:w-2/5 xl:w-1/5">
-            <!-- icon -->
-            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-              <img src="./../public/img/file-media-24.svg" alt="">
-                
-                
-            </div>
-  
-            <!-- text -->
-            <div class="flex flex-col items-center justify-center text-center mt-4">
-              <h3 class="font-sans font-medium text-xl">
-                Assets Reusability
-              </h3>
-  
-              <p class="max-w-xs w-60 mt-4 font-sans font-light text-lg text-lightGray">
-                By using blockchain, you can create an ecosystem that allows players...
-              </p>
-            </div>
-          </div>
-  
-          <!-- ugc -->
-          <div class="flex flex-col items-center justify-start w-full z-10 md:w-2/5 xl:w-1/5">
-            <!-- icon -->
-            <div class="relative ficon p-14 rounded-3xl shadow-inner after:shadow-white after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-              <img src="./../public/img/rocket-24.svg" alt="">
-            </div>
-  
-            <!-- text -->
-            <div class="flex flex-col items-center justify-center text-center mt-4">
-              <h3 class="max-w-xs w-60 font-sans font-medium text-xl">
-                User-Generated Content (UGC)
-              </h3>
-  
-              <p class="max-w-xs w-60 font-sans font-normal text-lg text-lightGray">
-                User content generation in traditional games is limit...
-              </p>
-            </div>
-          </div>
           </div>
         </div>
 
@@ -710,7 +721,7 @@
     </section>
 
     <!-- customer say -->
-    <section class="container flex flex-col items-center justify-center mx-auto mt-32">
+    <section class="container flex flex-col items-center justify-center mx-auto mt-32 px-4">
 
       <div class="flex flex-col mx-auto">
         <!-- text -->
@@ -728,17 +739,17 @@
         <!-- photo --> 
         <div class="relative min-w-[16rem] w-[16rem] h-[18rem] md:min-w-[21.75rem] md:w-[21.75rem] md:h-[24.25rem]">
 
-          <img class="relative z-20 w-full h-full object-cover object-center rounded-full" src="./../public/img/customer.png" alt="Avatar">
-          <div class="absolute top-4 -left-6 md:top-8 md:-left-12 z-10 block w-full h-full bg-white rounded-full"></div>
+          <img class="relative mx-auto z-20 w-full h-full object-cover object-center rounded-full" src="./../public/img/customer.png" alt="Avatar">
+          <div class="hidden md:absolute top-4 -left-6 md:top-8 md:-left-12 z-10 w-full h-full bg-white rounded-full"></div>
 
       </div>
         
 
         <!-- text -->
-      <div class="flex flex-col gap-8 px-8 mt-10 lg:mt-0">
+      <div class="flex flex-col items-center gap-8 px-8 mt-10 lg:mt-0 md:items-start">
           <!-- customer -->
           <div class="flex flex-col gap-2">
-            <h5 class="font-inter font-bold text-2xl">
+            <h5 class="font-inter mx-auto font-bold text-2xl md:mx-0">
               Justin Alins
             </h5>
             <p class="font-inter text-sm text-lightGray">
@@ -751,43 +762,12 @@
             </em>
           </blockquote>
 
-          <svg width="100" height="19" viewBox="0 0 100 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Group 1000002343">
-            <path id="Star 17" d="M90.0543 1.26697C90.2354 0.887412 90.7757 0.887412 90.9568 1.26697L93.0323 5.61653C93.1052 5.76929 93.2504 5.8748 93.4182 5.89691L98.1963 6.52675C98.6132 6.58171 98.7802 7.09555 98.4751 7.38509L94.9798 10.7031C94.8571 10.8196 94.8016 10.9903 94.8324 11.1568L95.7099 15.8956C95.7865 16.3091 95.3494 16.6267 94.9798 16.4261L90.744 14.1272C90.5953 14.0464 90.4158 14.0464 90.267 14.1272L86.0313 16.4261C85.6617 16.6267 85.2246 16.3091 85.3011 15.8956L86.1786 11.1568C86.2094 10.9903 86.154 10.8196 86.0312 10.7031L82.5359 7.38509C82.2309 7.09555 82.3979 6.58171 82.8148 6.52675L87.5929 5.89691C87.7607 5.8748 87.9059 5.76929 87.9788 5.61653L90.0543 1.26697Z" fill="url(#paint0_linear_31_171)"/>
-            <path id="Star 14" d="M9.7427 1.22827C9.9262 0.856977 10.4557 0.856976 10.6392 1.22827L12.8101 5.62086C12.8844 5.77112 13.029 5.87417 13.1952 5.89533L18.1628 6.52757C18.5851 6.58131 18.7513 7.10453 18.4375 7.39217L14.827 10.7013C14.6991 10.8185 14.6411 10.9937 14.6738 11.1641L15.5835 15.9076C15.6624 16.3187 15.2312 16.6389 14.8604 16.4446L10.423 14.1193C10.2777 14.0432 10.1042 14.0432 9.95887 14.1193L5.52153 16.4446C5.1507 16.6389 4.71954 16.3187 4.7984 15.9076L5.70812 11.1641C5.74079 10.9937 5.68281 10.8185 5.5549 10.7013L1.94443 7.39217C1.6306 7.10454 1.79684 6.58131 2.21913 6.52757L7.18668 5.89533C7.35295 5.87417 7.49754 5.77112 7.5718 5.62086L9.7427 1.22827Z" fill="url(#paint1_linear_31_171)"/>
-            <path id="Star 15" d="M29.7364 1.26697C29.9175 0.887412 30.4578 0.887412 30.6389 1.26697L32.7144 5.61653C32.7873 5.76929 32.9325 5.8748 33.1003 5.89691L37.8784 6.52675C38.2953 6.58171 38.4623 7.09555 38.1573 7.38509L34.6619 10.7031C34.5392 10.8196 34.4837 10.9903 34.5145 11.1568L35.392 15.8956C35.4686 16.3091 35.0315 16.6267 34.6619 16.4261L30.4262 14.1272C30.2774 14.0464 30.0979 14.0464 29.9491 14.1272L25.7134 16.4261C25.3438 16.6267 24.9067 16.3091 24.9833 15.8956L25.8607 11.1568C25.8916 10.9903 25.8361 10.8196 25.7133 10.7031L22.218 7.38509C21.913 7.09555 22.08 6.58171 22.4969 6.52675L27.275 5.89691C27.4428 5.8748 27.588 5.76929 27.6609 5.61653L29.7364 1.26697Z" fill="url(#paint2_linear_31_171)"/>
-            <path id="Star 16" d="M70.0606 1.22827C70.2441 0.856977 70.7736 0.856976 70.9571 1.22827L73.128 5.62086C73.2022 5.77112 73.3468 5.87417 73.5131 5.89533L78.4806 6.52757C78.9029 6.58131 79.0692 7.10453 78.7554 7.39217L75.1449 10.7013C75.017 10.8185 74.959 10.9937 74.9917 11.1641L75.9014 15.9076C75.9802 16.3187 75.5491 16.6389 75.1783 16.4446L70.7409 14.1193C70.5956 14.0432 70.4221 14.0432 70.2768 14.1193L65.8394 16.4446C65.4686 16.6389 65.0374 16.3187 65.1163 15.9076L66.026 11.1641C66.0587 10.9937 66.0007 10.8185 65.8728 10.7013L62.2623 7.39217C61.9485 7.10454 62.1147 6.58131 62.537 6.52757L67.5046 5.89533C67.6708 5.87417 67.8154 5.77112 67.8897 5.62086L70.0606 1.22827Z" fill="url(#paint3_linear_31_171)"/>
-            <path id="Star 18" d="M49.7361 1.22827C49.9196 0.856977 50.4491 0.856976 50.6326 1.22827L52.8035 5.62086C52.8777 5.77112 53.0223 5.87417 53.1886 5.89533L58.1561 6.52757C58.5784 6.58131 58.7447 7.10453 58.4309 7.39217L54.8204 10.7013C54.6925 10.8185 54.6345 10.9937 54.6672 11.1641L55.5769 15.9076C55.6557 16.3187 55.2246 16.6389 54.8537 16.4446L50.4164 14.1193C50.2711 14.0432 50.0976 14.0432 49.9522 14.1193L45.5149 16.4446C45.1441 16.6389 44.7129 16.3187 44.7918 15.9076L45.7015 11.1641C45.7342 10.9937 45.6762 10.8185 45.5483 10.7013L41.9378 7.39217C41.624 7.10454 41.7902 6.58131 42.2125 6.52757L47.1801 5.89533C47.3463 5.87417 47.4909 5.77112 47.5652 5.62086L49.7361 1.22827Z" fill="url(#paint4_linear_31_171)"/>
-            </g>
-            <defs>
-            <linearGradient id="paint0_linear_31_171" x1="90.5055" y1="0.321289" x2="90.5055" y2="18.6789" gradientUnits="userSpaceOnUse">
-            <stop offset="0.0985536" stop-color="#FFA364"/>
-            <stop offset="0.788912" stop-color="#FFC112"/>
-            </linearGradient>
-            <linearGradient id="paint1_linear_31_171" x1="10.1909" y1="0.321289" x2="10.1909" y2="18.6789" gradientUnits="userSpaceOnUse">
-            <stop offset="0.0985536" stop-color="#FFA364"/>
-            <stop offset="0.788912" stop-color="#FFC112"/>
-            </linearGradient>
-            <linearGradient id="paint2_linear_31_171" x1="30.1876" y1="0.321289" x2="30.1876" y2="18.6789" gradientUnits="userSpaceOnUse">
-            <stop offset="0.0985536" stop-color="#FFA364"/>
-            <stop offset="0.788912" stop-color="#FFC112"/>
-            </linearGradient>
-            <linearGradient id="paint3_linear_31_171" x1="70.5088" y1="0.321289" x2="70.5088" y2="18.6789" gradientUnits="userSpaceOnUse">
-            <stop offset="0.0985536" stop-color="#FFA364"/>
-            <stop offset="0.788912" stop-color="#FFC112"/>
-            </linearGradient>
-            <linearGradient id="paint4_linear_31_171" x1="50.1843" y1="0.321289" x2="50.1843" y2="18.6789" gradientUnits="userSpaceOnUse">
-            <stop offset="0.0985536" stop-color="#FFA364"/>
-            <stop offset="0.788912" stop-color="#FFC112"/>
-            </linearGradient>
-            </defs>
-          </svg>
             
           
       </div>
         
       </div>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 mt-8">
             
         <!-- left arrow -->
         <div class="px-3 mt-1">
@@ -811,7 +791,7 @@
     </section>
 
     <!-- How it Work -->
-    <section class="container flex flex-col mx-auto mt-40">
+    <section class="flex flex-col mx-auto w-full mt-40">
       <div class="flex flex-col mx-auto">
         <!-- text -->
         <div class="flex flex-col text-center">
@@ -824,16 +804,17 @@
           </h2>
           </div>
 
-          <p class="my-6 text-white text-2xl font-sans">
+          <p class="my-6 px-4 text-white text-2xl font-sans">
             By using Blockchain, we can have the following advantages: 
           </p>
         </div>
       </div>
 
-      <div class="relative flex justify-center gap-10 mx-auto px-12">
+      <div class="relative flex justify-center">
 
-        <div class="flex items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4
-        after:left-0 after:right-0 after:blur-2xl after:opacity-20">
+        <div class="flex items-center justify-center gap-10 mx-auto px-12 overflow-hidden after:w-full after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute 
+        after:top-16 after:bottom-1/4 after:left-0 after:right-0 after:blur-2xl after:opacity-40">
+        <div class="flex items-start justify-between mt-20 w-1/2">
           <!-- Best resources & support -->
           <div class="flex flex-col items-center justify-start z-10">
             <!-- icon -->
@@ -859,102 +840,17 @@
             </div> 
           </div>
         </div>
-        
-        <!-- Easiest-to-use product -->
-        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
-         after:right-0 after:blur-2xl after:opacity-20 xl:flex">
-          <!-- Best resources & support -->
-          <div class="flex flex-col items-center justify-start z-10">
-            <!-- icon -->
-            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-                  <div>
-                    <h5 class="font-sans text-5xl font-semibold">
-                      Easiest-to-use product
-                    </h5>
-                  </div>
-                  <div>
-                    <p class="font-sans font-normal text-xl text-lightGray">
-                      We're the pioneers of simplifying goal we are proving it management.
-                    </p>
-                  </div>
 
-                 <div class="flex items-center gap-3">
-                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
-                    learn more
-                    <img src="./../public/img/arrow.svg" alt="">
-                  </a>
-                </div>
-                
-
-          
-            </div> 
-          </div>
-        </div>
-        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
-         after:right-0 after:blur-2xl after:opacity-20">
-          <!-- Best resources & support -->
-          <div class="flex flex-col items-center justify-start z-10">
-            <!-- icon -->
-            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-                  <div>
-                    <h5 class="font-sans text-5xl font-semibold">
-                      Easiest-to-use product
-                    </h5>
-                  </div>
-                  <div>
-                    <p class="font-sans font-normal text-xl text-lightGray">
-                      We're the pioneers of simplifying goal we are proving it management.
-                    </p>
-                  </div>
-
-                 <div class="flex items-center gap-3">
-                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
-                    learn more
-                    <img src="./../public/img/arrow.svg" alt="">
-                  </a>
-                </div>
-                
-
-          
-            </div> 
-          </div>
-        </div>
-        <div class="hidden items-start justify-between mt-20 after:bg-gradient-to-r after:from-darkViolet after:to-lightBlue after:absolute after:top-1/4 after:bottom-1/4 after:left-0
-         after:right-0 after:blur-2xl after:opacity-20">
-          <!-- Best resources & support -->
-          <div class="flex flex-col items-center justify-start z-10">
-            <!-- icon -->
-            <div class="relative flex flex-col gap-8 max-w-2xl faicon p-20 rounded-3xl after:bg-lightenGray after:rounded-3xl after:absolute  after:top-0 after:bottom-0 after:left-0 after:right-0">
-                  <div>
-                    <h5 class="font-sans text-5xl font-semibold">
-                      Easiest-to-use product
-                    </h5>
-                  </div>
-                  <div>
-                    <p class="font-sans font-normal text-xl text-lightGray">
-                      We're the pioneers of simplifying goal we are proving it management.
-                    </p>
-                  </div>
-
-                 <div class="flex items-center gap-3">
-                  <a href="#" class="flex  items-center gap-3 text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
-                    learn more
-                    <img src="./../public/img/arrow.svg" alt="">
-                  </a>
-                </div>
-                
-
-          
-            </div> 
-          </div>
+      
         </div>
         
       </div>
+        
+  
     </section>
-
     <!-- FAQ -->
     <section class="container flex flex-col items-center justify-center mx-auto my-44">
-      <div class="flex flex-col items-center justify-center mx-24">
+      <div class="flex flex-col mx-8 items-center justify-center sm:mx-24">
         <div class="flex flex-col">
           <h2 class="font-sans font-semibold text-5xl mb-6 py-2 tracking-tighter text-transparent 
           bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text">
@@ -962,14 +858,14 @@
           </h2>
           
         </div>
-        <p class="my-6 text-white text-base font-sans md:text-lg lg:text-2xl">
+        <p class="my-6 text-white text-xs font-sans sm:text-base md:text-lg lg:text-2xl xl:text-3xl">
           By using Blockchain, we can have the following advantages: 
         </p>
       </div>
 
       <div class="flex flex-col justify-center mx-auto gap-4 my-14 w-full md:gap-8 lg:gap-12">
         <!-- 01 question -->
-        <div class="flex items-start gap-12 px-10 lg:px-28">
+        <div class="flex items-start gap-4 px-4 sm:gap-12 sm:px-10 lg:px-28">
           <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text md:text-4xl lg:text-5xl">
             01
           </div>
@@ -981,14 +877,14 @@
                 </h2>
               </div>
               <div>
-                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
-                  <img src="./../public/img/plus.svg" alt="" class="w-4">
-                </div>
+                <button class="btn-faq flex items-center justify-center w-10 h-10 bg-gradient-to-r from-violet-500 to-lightBlue p-3 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="object-contain w-4">
+                </button>
               </div>
             </div>
   
             <div>
-              <p class="flex max-w-4xl font-sans font-normal text-lg  tracking-wide text-lightGray">
+              <p class="faq-text hidden max-w-4xl font-sans font-normal text-xs tracking-wide text-lightGray sm:text-lg">
                 As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.
               </p>
             </div>
@@ -999,7 +895,7 @@
         <div class="w-full border-0.5 border-b border-lightenGray"></div>
 
         <!-- 02 question -->
-        <div class="flex items-start gap-12 px-10 lg:px-28">
+        <div class="flex items-start gap-4 px-4 sm:gap-12 sm:px-10 lg:px-28">
           <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text md:text-4xl lg:text-5xl">
             02
           </div>
@@ -1011,10 +907,15 @@
                 </h2>
               </div>
               <div>
-                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
-                  <img src="./../public/img/plus.svg" alt="" class="w-4">
-                </div>
+                <button class="btn-faq flex items-center justify-center w-10 h-10 bg-gradient-to-r  from-violet-500 to-lightBlue p-3 rounded-full">
+                  <img src="./../public/img/plus.svg" alt="" class="object-contain w-4">
+                </button>
               </div>
+            </div>
+            <div>
+              <p class="faq-text hidden max-w-4xl font-sans font-normal text-xs tracking-wide text-lightGray sm:text-lg">
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.
+              </p>
             </div>
           </div>
         </div>
@@ -1022,7 +923,7 @@
         <div class="w-full border-0.5 border-b border-lightenGray"></div>
 
         <!-- 03 question -->
-        <div class="flex items-start gap-12 px-10 lg:px-28">
+        <div class="flex items-start gap-4 px-4 sm:gap-12 sm:px-10 lg:px-28">
           <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text  md:text-4xl lg:text-5xl">
             03
           </div>
@@ -1034,10 +935,15 @@
                 </h2>
               </div>
               <div>
-                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                <button class="btn-faq flex items-center justify-center w-10 h-10 bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
                   <img src="./../public/img/plus.svg" alt="" class="w-4">
-                </div>
+                </button>
               </div>
+            </div>
+            <div>
+              <p class="faq-text hidden max-w-4xl font-sans font-normal text-xs  tracking-wide text-lightGray sm:text-lg">
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.
+              </p>
             </div>
           </div>
         </div>
@@ -1047,7 +953,7 @@
 
 
         <!-- 04 question -->
-        <div class="flex items-start gap-12 px-10 lg:px-28">
+        <div class="flex items-start gap-4 px-4 sm:gap-12 sm:px-10 lg:px-28">
           <div class="font-sans font-bold text-3xl  text-transparent bg-gradient-to-r from-violet-500 to-lightBlue bg-clip-text  md:text-4xl lg:text-5xl">
             04
           </div>
@@ -1059,10 +965,15 @@
                 </h2>
               </div>
               <div>
-                <div class="bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
+                <button class="btn-faq flex items-center justify-center group w-10 h-10 bg-gradient-to-r from-violet-500 to-lightBlue p-3 shrink-0 rounded-full">
                   <img src="./../public/img/plus.svg" alt="" class="w-4">
-                </div>
+                </button>
               </div>
+            </div>
+            <div>
+              <p class="faq-text hidden max-w-4xl font-sans font-normal text-xs tracking-wide text-lightGray sm:sm:text-lg">
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.
+              </p>
             </div>
           </div>
         </div>
@@ -1070,8 +981,8 @@
      
     </section>
 
-    <footer class="relative bg-darkBlue">
-      <div class="container flex flex-col justify-around gap-8 mx-auto py-32 lg:flex-row lg:px-2">
+    <footer class="relative bg-darkBlue w-full px-4">
+      <div class="container flex flex-col justify-around bg-darkBlue gap-8 mx-auto px-2 py-32 lg:flex-row lg:px-4">
 
         <!-- logo and social icon -->
         <div class="flex flex-col items-start justify-start gap-4">
@@ -1089,7 +1000,7 @@
           </div>
           
           <!-- social icon -->
-          <div class="flex gap-8">
+          <div class="flex gap-4 justify-between">
 
             <!-- facebook log -->
             <div class="w-12 h-12">
@@ -1118,33 +1029,33 @@
           <!-- resources -->
         <div class="flex flex-col items-start gap-12">
 
-          <h5 class="font-worksans font-semibold text-3xl">
+          <h5 class="font-worksans font-semibold text-xl sm:text-3xl">
             Resources
           </h5>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Features</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Pricing</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Login</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Signup</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Features</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Pricing</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Login</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Signup</a>
         </div>
 
         <div class="flex flex-col items-start gap-12">
 
-          <h5 class="font-worksans font-semibold text-3xl">
+          <h5 class="font-worksans font-semibold text-xl sm:text-3xl">
             Legal
           </h5>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Terms of Use</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Privace Policy</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Legal Notice</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Terms of Use</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Privace Policy</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Legal Notice</a>
         </div>
   
         <div class="flex flex-col items-start gap-12">
   
-          <h5 class="font-worksans font-semibold text-3xl">
+          <h5 class="font-worksans font-semibold text-xl sm:text-3xl">
             Links
           </h5>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Feedback</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Privace Policy</a>
-          <a href="#" class="font-roboto font-medium text-xl opacity-50">Legal Notice</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Feedback</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Privace Policy</a>
+          <a href="#" class="font-roboto font-medium text-xs sm:text-xl opacity-50">Legal Notice</a>
         </div>
       </div>
     </div>
@@ -1158,5 +1069,7 @@
     </div>
 
     </footer>
+
+ 
   </body>
 </html>
