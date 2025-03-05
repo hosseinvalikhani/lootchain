@@ -1539,6 +1539,36 @@ video {
   top: 4rem;
 }
 
+.after\:-bottom-2::after {
+  content: var(--tw-content);
+  bottom: -0.5rem;
+}
+
+.after\:-bottom-1::after {
+  content: var(--tw-content);
+  bottom: -0.25rem;
+}
+
+.after\:-bottom-0::after {
+  content: var(--tw-content);
+  bottom: -0px;
+}
+
+.after\:-bottom-\[1px\]::after {
+  content: var(--tw-content);
+  bottom: -1px;
+}
+
+.after\:-bottom-\[2px\]::after {
+  content: var(--tw-content);
+  bottom: -2px;
+}
+
+.after\:-bottom-\[3px\]::after {
+  content: var(--tw-content);
+  bottom: -3px;
+}
+
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
